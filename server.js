@@ -25,17 +25,9 @@ mongoose.connect(process.env.URI || "mongodb://localhost/workoutDB", {
 
 // routes
 app.use(require("./routes/api.js"));
-// will need html routes
+app.use(require("./routes/homeroutes.js"))
 
 app.listen(PORT, () => {
     console.log(`App running on port ${PORT}!`);
 });
 
-// const MongoClient = require('mongodb').MongoClient;
-// const uri = 
-// const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
-// client.connect(err => {
-//   const collection = client.db("test").collection("devices");
-//   // perform actions on the collection object
-//   client.close();
-// });
