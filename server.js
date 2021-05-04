@@ -1,7 +1,8 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
-require('dotenv').config({path: path.join(__dirname, "..", ".env")});
+require('dotenv').config();
+// {path: path.join(__dirname, "..", ".env")}
 
 const PORT = process.env.PORT || 3005;
 
@@ -12,11 +13,13 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-console.log(process.env.URI);
-mongoose.connect(process.env.URI || "mongodb://localhost/workoutDB", {
+const url = process.env.URI;
+
+// console.log(process.env.URI);
+mongoose.connect(url, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
-    useFindAndModify: false,
+    // useFindAndModify: false,
     useCreateIndex: true
 }).then(() => {
     console.log('Connection estabislished with MongoDB');
@@ -30,4 +33,3 @@ app.use(require("./routes/homeroutes.js"))
 app.listen(PORT, () => {
     console.log(`App running on port ${PORT}!`);
 });
-
