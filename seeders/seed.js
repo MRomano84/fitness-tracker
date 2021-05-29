@@ -3,7 +3,7 @@ let db = require("../models");
 const path = require('path')
 require('dotenv').config({path: path.join(__dirname, "..", ".env")});
 
-mongoose.connect(process.env.URI, {
+mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useFindAndModify: false
 });
