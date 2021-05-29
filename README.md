@@ -1,15 +1,5 @@
 # Fitness-Tracker
 
-
-![image of app](https://github.com/MRomano84/fitness-tracker/blob/main/public/assets/ss1.PNG)
------------------------------------------
-![image of app](https://github.com/MRomano84/fitness-tracker/blob/main/public/assets/ss2.PNG)
-
-## Deployed Link
-
-[Live Link](https://stormy-spire-85331.herokuapp.com/)
-
------------------------------------------
 ## Table of Contents
 
 * [Purpose](#Purpose)
@@ -24,6 +14,15 @@
 ## Purpose
 
 An application that allows the user to input new workouts and complete previous workouts. Once done, clicking to the dashboard the user will be able to see their workout stats from the previous seven days. Clicking on a certain workout in either the duration or workout will alter the chart and reflect changes. 
+
+
+![image of app](https://github.com/MRomano84/fitness-tracker/blob/main/public/assets/ss1.PNG)
+-----------------------------------------
+![image of app](https://github.com/MRomano84/fitness-tracker/blob/main/public/assets/ss2.PNG)
+
+## Deployed Link
+
+[Live Link](https://stormy-spire-85331.herokuapp.com/)
 
 ---------------------------------------------
 ## Technologies
