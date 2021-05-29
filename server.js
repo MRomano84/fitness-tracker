@@ -13,10 +13,8 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-const url = process.env.URI;
-
 // console.log(process.env.URI);
-mongoose.connect(url, {
+mongoose.connect(process.env.MONGODB_URI, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
     // useFindAndModify: false,
