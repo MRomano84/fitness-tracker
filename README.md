@@ -1,9 +1,9 @@
 # Fitness-Tracker
 
 
-![image of app](public/assets/ss1.png)
+![image of app](https://github.com/MRomano84/fitness-tracker/blob/main/public/assets/ss1.PNG)
 -----------------------------------------
-![image of app](public/assets/ss2.png)
+![image of app](https://github.com/MRomano84/fitness-tracker/blob/main/public/assets/ss2.PNG)
 
 ## Deployed Link
 
